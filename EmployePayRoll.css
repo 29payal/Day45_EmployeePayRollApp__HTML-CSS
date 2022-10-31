@@ -217,3 +217,11 @@ border: none;
 		align-items: flex-start;
 	}
 }
+
+error-output {
+    font-size: 12px;
+    font-style:  bold;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
