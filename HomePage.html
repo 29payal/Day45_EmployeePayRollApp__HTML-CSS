@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="HomePage.css">
+        <title> Employee PayRoll App </title>
+    </head>
+    <body>
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="assets/Logo/Logo1.png" alt=""></div>
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="header-content">
+                <div class="emp-detail-text">
+                    Employee Details <div class="emp-count">10</div>
+                </div>
+                <a href="EmployePayRoll.html" class="add-button">
+                 <img src="assets/Icons/add-24px.svg"  alt="">Add user</a> 
+            </div>
+        </div>
+
+        <div class="table-main">
+        <table id="display" class="table">
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>startDate</th>
+                <th>Actions</th>
+            </tr>
+
+            <tr>
+                <td><img class="profile" alt="" 
+                    src="assets/Profile_Images/Profile1.png">
+                </td>
+                <td>Payal Sharma</td>
+                <td>Female</td>
+                <td><div class="dept-label">HR</div>
+                    <div class= "dept-label">Engineer</div>
+                     <div class="dept-label">Finance</div> 
+                    </td>
+                <td>200000</td>
+                <td>1 nov 2020</td>
+                <td>
+                    <img id="1" onclick="remove(this)" alt="delete" 
+                    src="assets/Icons/delete-black-18dp.svg">
+                    <img id="1" onclick= "update(this)" alt="edit" 
+                    src="assets/Icons/create-black-18dp.svg">
+                </td>
+            </tr>
+        </table>
+         </div>
+
+        <script src="HomePage.js"></script>
+        <script src="site_properties.js"></script>
+        <script src="Utility.js"></script>
+        <script src="EmployeePayRoll.js"></script>
+    </body>
+</html>
